@@ -1,8 +1,3 @@
-provider "google" {
-  project = "your-gcp-project-id"
-  region  = "us-central1"
-}
-
 resource "google_compute_instance" "vm_instance" {
   name         = "my-vm-instance"
   machine_type = "e2-medium"
@@ -20,4 +15,3 @@ resource "google_compute_instance" "vm_instance" {
     }
   }
 }
-
